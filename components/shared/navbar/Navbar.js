@@ -49,9 +49,9 @@ const Navbar = () => {
           <Link href={'/Account'} className="bg-slate-700 p-2 rounded-lg group hover:bg-white transition-all duration-200 ease-in">
             <FaRegUser className="text-white text-lg group-hover:text-black" />
           </Link>
-          <div className="bg-slate-700 p-2 rounded-lg group hover:bg-white transition-all duration-200 ease-in">
+          <Link href={'/MyCart'} className="bg-slate-700 p-2 rounded-lg group hover:bg-white transition-all duration-200 ease-in">
             <GrCart className="text-white text-lg group-hover:text-black" />
-          </div>
+          </Link>
         </div>
 
         {/* Mobile menu icon */}
