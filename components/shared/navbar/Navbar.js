@@ -11,7 +11,7 @@ import Link from "next/link";
 
 // Navigation links array
 const navLinks = [
-  { title: "Smartphones", href: "category" },
+  { title: "Smartphones", href: "Bag" },
   { title: "Feature Phones", href: "category" },
   { title: "Cases & Covers", href: "category" },
   { title: "Chargers", href: "category" },
@@ -46,12 +46,12 @@ const Navbar = () => {
 
         {/* User Sign In and Cart */}
         <div className="flex justify-end flex-1 gap-3">
-          <div className="bg-slate-700 p-2 rounded-lg group hover:bg-white transition-all duration-200 ease-in">
+          <Link href={'/Account'} className="bg-slate-700 p-2 rounded-lg group hover:bg-white transition-all duration-200 ease-in">
             <FaRegUser className="text-white text-lg group-hover:text-black" />
-          </div>
-          <div className="bg-slate-700 p-2 rounded-lg group hover:bg-white transition-all duration-200 ease-in">
+          </Link>
+          <Link href={'/MyCart'} className="bg-slate-700 p-2 rounded-lg group hover:bg-white transition-all duration-200 ease-in">
             <GrCart className="text-white text-lg group-hover:text-black" />
-          </div>
+          </Link>
         </div>
 
         {/* Mobile menu icon */}
